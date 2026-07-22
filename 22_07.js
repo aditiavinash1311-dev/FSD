@@ -39,5 +39,22 @@ const towords = (digit)=>{
 console.log(towords(5));
 
 // create another funtion that takes a number and show in words with the help of towords funtion.
+// const shownumberinwords = (num) =>{
+//     const numStr = num.tostring();
+//     for(let i=0;i<numStr.length;i++){
+//         const digit = parseInt(numStr[i]);
+//         console.log(towords(digit));
+        
+//     }
+// }
+// console.log(shownumberinwords(123456789));
+
+const rollno ="2345423232";
+const digits=String(rollno).split("");
+console.log(digits);
+for(let i=0;i<digits.length;i++){
+        console.log(towords(parseInt(digits[i])));
+        
+    }
 
 
