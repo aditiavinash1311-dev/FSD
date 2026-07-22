@@ -57,4 +57,9 @@ for(let i=0;i<digits.length;i++){
         
     }
 
-
+let inwords=" ";
+digits.forEach((d) =>{
+    //console.log(towords(number(d)));
+    inwords +=" "+towords(Number(d));
+});
+console.log(inwords);
